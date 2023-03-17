@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표만들기 - 남효령</title>
+</head>
+<body>
+    <h1>2줄 3칸 기본 표 만들기</h1>
+    <table border="1" width="50%"> <!--border는 선 테두리 굵기, Width는 길이라는 뜻!-->
+        <!--1번 줄-->
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <!--2번 줄-->
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+    <hr>
+
+    <h1>표에 제목 만들기</h1>
+    <table border="1" width="100%">
+        <!--1번 줄-->
+        <tr>
+            <th>학과</th>
+            <td>컴퓨터공학부</td>
+        </tr>
+        <!--2번 줄-->
+        <tr>
+            <th>학번</th>
+            <td>202101012</td>
+        </tr>
+         <!--3번 줄-->
+        <tr>
+            <th>이름</th>
+            <td>남효령</td>
+        </tr>
+
+    </table>
+    <hr1>셀 합치기 -3줄 4칸 표</hr1>
+    <table border="1" width="100%">
+    <!--1번 줄-->
+    <tr>
+        <td colspan="3">1,2,3</td>
+        <td>4</td>
+    </tr>
+    <!--2번 줄-->
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td rowspan="3">4, 8, 12</td>
+    </tr>
+     <!--3번 줄-->
+    <tr>
+        <td rowspan="2">5,9</td>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+    <!--4번 줄-->
+    <tr>
+        <td>10</td>
+        <td>11</td>
+    </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,51 @@
+body {
+    font-family: "맑은 고딕", "고딕", "굴림";
+}
+
+header {
+    background-color: rgb(246, 206, 213);
+    width: 80%;
+    margin-right: auto; /* 글자를 가운데로 정렬 하는 게 아니라 뒤에 있는 배경을 가운데로 정렬*/
+    margin-left: auto; /* 글자를 가운데로 정렬 하는 게 아니라 뒤에 있는 배경을 가운데로 정렬, 마진은 상자의 바깥 쪽 간격 여백을 말하는 것*/
+    padding: 10px;
+    overflow: hidden;
+
+    /* padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px; */
+    /* padding: 10px 20px 50px 60px; 패딩 안에 한 번에 px를 적용할 경우 top을 기준으로 시계 방향으로 지정 된다. 10은 위쪽 20은 오른쪽 50은 아래쪽 60은 왼쪽 */
+}
+
+h1 {
+    background-color: rgb(246, 206, 213);
+    font-size:  2em;
+
+}
+
+/* header의 자손인 h1 태그에 적용 조상과 자손은 띄어쓰기, 부모와 자식 관계는 > 괄호로 가능 즉/ header h1 - 조상과 자손 / header > h1 부모와 자식*/
+header h1 {
+    width: 40%;
+    background-color: rgb(246, 206, 213);
+    float: left;
+}
+/*header의 자식인 nav에 적용*/
+header > nav  {
+    background-color: rgb(246, 206, 213);
+    width: 50%;
+    float: right;
+}
+/* nav 안에 있는 자식인 ul, 앞에 있는 '.'을 없애기위해 */
+nav > ul{
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    float: left;
+    margin: 15px;
+}
+
+a { /* nav a or nav ui li*/
+    text-decoration: none;
+    color: black;
+}

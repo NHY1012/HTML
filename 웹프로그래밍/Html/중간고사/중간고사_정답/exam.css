@@ -1,0 +1,112 @@
+body {
+    padding : 0px;
+    margin: 0px;
+}
+
+input[type=text], input[type=password] {
+    width : 200px;
+    height : 40px;
+    border : 1px solid #8c8c8c;
+    padding :5px;
+    box-sizing : border-box;
+}
+
+input[type=submit], input[type=reset] {
+    width : 200px;
+    height : 40px;
+    border-radius: 5px;
+    border-width: 0px;
+    padding :5px;
+    box-sizing : border-box;
+    background-color: lightpink;
+    box-shadow: 2px 2px rgb(61, 60, 60);
+}
+
+header, footer {
+    padding : 20px;	
+    background-color : #CEE9EA;
+    text-align : center ;
+}
+
+header {
+    font-size: 30px;
+    font-weight: bold;
+}
+nav {
+    height: 100px;
+}
+
+nav > div {
+    float: left;
+}
+nav img {
+    padding: 10px;
+}
+nav #menu{
+    color : white ;
+	text-align : center ;
+	margin : 25px;
+    font-size: 18px;
+}
+#menu a {
+    display : inline-block;
+    text-decoration : none ; 
+    color : black;
+    font-weight: bold;
+    width : 100px;
+	height : 40px;
+}
+#menu a:hover {
+    border-bottom: solid 3px rgb(90, 178, 207) ;;
+    color : #31acca ;
+}
+
+section {
+   margin: 20px;
+   padding: 10px;
+}
+
+h2 {
+    padding: 10px;
+    margin: 0px;
+    border-style: solid;
+    border-width: 0px 0px 3px 10px;
+}
+#s1 p {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    padding-left: 20px;
+}
+#s1 h2 {
+    border-color: #31acca;
+}
+#s2 h2 {
+    border-color: #66b313;
+}
+#s3 h2 {
+    border-color: #f1335c;
+}
+#s2 article {
+    float: left;
+    width: 45%;
+    height: 300px;
+    padding: 20px;
+    margin: 20px;
+}
+
+h3 {
+    border-style: solid;
+    border-width: 0px 0px 0px 10px;
+    border-color: rgb(168, 238, 115);
+    padding: 10px;
+}
+
+li {
+    line-height: 30px;
+}
+
+hr, section, footer {
+    clear: both;
+}
+

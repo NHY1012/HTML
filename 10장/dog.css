@@ -1,0 +1,100 @@
+body
+{
+    font-size: "맑은 고딕", "고딕", "굴림";
+}
+
+header
+{
+    width: 80%;
+    background-color: rgb(250, 215, 219);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    height: 80px;
+}
+
+header h1
+{
+    float: left;
+    color: rgb(41, 90, 130);
+    padding-left: 20px;
+}
+
+header nav
+{
+    float: right;
+    padding-top: 20px;
+}
+
+nav a
+{
+    font-weight: bold;
+    text-decoration: none;
+    text-decoration: skyblue;
+}
+
+nav ul 
+{
+    list-style-type: none;
+}
+
+nav li
+{
+    /*블록 요소를 인라인으로 바꾸고 싶다면 , 디스플레이를 인라인으로 적용하면 된다.*/
+    display: inline;
+    margin: 15px;
+}
+
+article
+{
+    clear: both;
+    width: 80%;
+    border:  5px solid gray;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+section h3
+{
+    break-before: column;
+    padding-left: 15px;
+}
+
+section dt
+{
+    padding-left: 20px;
+    line-height: 50px;
+}
+
+section
+{
+    columns: 3;
+    column-rule:  1px dotted palevioletred;
+    padding: 10px;
+}
+
+aside
+{
+    clear: both;
+    background-color: yellowgreen;
+    margin: 0 auto;
+    padding: 10px;
+    width: 80%
+    
+}
+aside li
+{
+    line-height: 30px;
+}
+
+footer
+{
+    clear: both;
+    width: 80%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    padding: 10px;
+}

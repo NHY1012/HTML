@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>비디오 재생하기 - 남효령</title>
+    </head>
+    <body>
+        <video src="media/bali.mp4" controls></video> <!-- 기본적으로 비디오를 넣는 파일 -->
+        <video controls>
+            <source src="media/bali.mp4" type="video/mp4">
+            <source src="media/bali.webm" type="video/webm"> <!-- 만일의 상황에 비디오가 안 나올 경우 대체 영상을 보여줄 수 있도록 -->
+        </video>
+
+        <video controls>
+            <source src="media/bali.mp4" type="video/mp4">
+            <source src="media/bali.webm" type="video/webm">
+            이 영상을 보기 위해서는 HTML5를 지원하는 브라우저(크롬, 엣지)가 필요합니다. <!-- 이 문구는 두 영상이 다 나오지 않았을 때 이 문구가 나와서 사용자들이 알 수 있도록-->
+        </video>
+
+        <video controls>
+            <source src="media/bali.mp4" type="video/mp4">
+            <source src="media/bali.webm" type="video/webm">
+            <track src="media/bali.vtt" srclang="ko" label="korean" default> 
+            이 영상을 보기 위해서는 HTML5를 지원하는 브라우저(크롬, 엣지)가 필요합니다.
+        </video>
+    </body>
+</html>

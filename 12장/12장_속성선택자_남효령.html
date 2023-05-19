@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>속성선택자1 -남효령 </title>
+
+        <style>
+            ul
+            {
+                list-style: none;
+            }
+            li
+            {
+                display: inline-block; /*가로로 지정*/
+                width: 120px;
+                margin: 10px;
+            }
+
+            li > a /*  li의 자식관계인 a라고 지정하는 것*/
+            {
+                text-decoration: none;
+                color: black;
+                font-size: 14px;
+                padding: 5px 20px;
+            }
+
+            a[href]
+            {
+                /*a라는 태그 안에 href에만 지정해서 스타일을 주는 것*/
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a>메인 메뉴 :</a></li>
+            <li><a href="#">메뉴1</a></li>
+            <li><a href="#">메뉴2</a></li>
+            <li><a href="#">메뉴3</a></li>
+            <li><a href="#">메뉴4</a></li>
+        </ul>
+    </body>
+</html>

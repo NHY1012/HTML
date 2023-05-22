@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Transform 1 - 남효령</title>
+        <style>
+            .origin
+            {
+                width: 200px;
+                height: 134px;
+                border: 1px solid black;
+                margin: 40px;
+                float: left;
+            }
+
+            .movex:hover /* hover의 뜻은 마우스 올리면 */
+            {
+                -webkit-transform: translateX(50px);
+                -ms-transform: translateX(50px);
+                -moz-transform: translateX(50px);
+                -o-transform: translateX(50px);
+                transform: translateX(50px); /*트렌스폼 함수를 사용해서 X좌표로 50px 만큼 이동*/
+            }
+
+            .movey:hover
+            {
+                -webkit-transform: translateY(20px);
+                -ms-transform: translateY(20px);
+                -moz-transform: translateY(20px);
+                -o-transform: translateY(20px);
+                transform: translateY(20px); /*트렌스폼 함수를 사용해서 X좌표로 50px 만큼 이동*/
+            }
+
+            .movexy:hover
+            {
+                /* translate 자체가 x,y를 뜻함*/
+                -webkit-transform: translate(10px, 20px);
+                -ms-transform: translate(10px, 20px);
+                -moz-transform: translate(10px, 20px);
+                -o-transform: translate(10px, 20px);
+                transform: translate(10px, 20px); /*트렌스폼 함수를 사용해서 X좌표로 50px 만큼 이동*/
+            }
+
+        </style>
+    </head>
+    <body> 
+        <div class="origin">
+            <div class="movex"> <!-- x 좌표 -->
+                <img src="images/bus.jpg">
+            </div>
+        </div>
+        
+        <div class="origin">
+            <div class="movey"> <!-- y 좌표 -->
+                <img src="images/bus.jpg">
+            </div>
+        </div>
+
+        <div class="origin">
+            <div class="movexy"> <!-- x, y 좌표 -->
+                <img src="images/bus.jpg">
+            </div>
+        </div>
+    </body>
+</html>

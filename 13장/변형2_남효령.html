@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Transform 2 - 남효령</title>
+        <style>
+            .origin
+            {
+                width: 200px;
+                height: 134px;
+                margin: 40px;
+                float: left;
+            }
+
+            .secalex:hover /* hover의 뜻은 마우스 올리면 */
+            {
+                -webkit-transform: scaleX(1.2);
+                -ms-transform: scaleX(1.2);
+                -moz-transform: scaleX(1.2);
+                -o-transform: scaleX(1.2);
+                transform: scaleX(1.2);
+                transform: scaleX(1.2);
+            }
+
+            .secaley:hover /* hover의 뜻은 마우스 올리면 */
+            {
+                -webkit-transform: scaleY(1.5);
+                -ms-transform: scaleY(1.5);
+                -moz-transform: scaleY(1.5);
+                -o-transform: scaleY(1.5);
+                transform: scaleY(1.5);
+                transform: scaleY(1.5);
+            }
+
+            .secale:hover /* hover의 뜻은 마우스 올리면 */
+            {
+                -webkit-transform: scale(0.7);
+                -ms-transform: scale(0.7);
+                -moz-transform: scale(0.7);
+                -o-transform: scale(0.7);
+                transform: scale(0.7);
+                transform: scale(0.7);
+            }
+        </style>
+    </head>
+    <body> 
+        <div class="origin">
+            <div class="secalex"> <!-- x 좌표 -->
+                <img src="images/fruit.jpg">
+            </div>
+        </div>
+        
+        <div class="origin">
+            <div class="secaley"> <!-- y 좌표 -->
+                <img src="images/fruit.jpg">
+            </div>
+        </div>
+
+        <div class="origin">
+            <div class="secale"> <!-- x, y 좌표 -->
+                <img src="images/fruit.jpg">
+            </div>
+        </div>
+    </body>
+</html>

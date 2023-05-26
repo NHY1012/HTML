@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>트렌지션1 - 남효령</title>
+        <style>
+            div{
+                width: 200px;
+                height: 200px;
+                float: left;
+                margin: 30px;
+            }
+            .bg-tr{
+                background-color: palegreen;
+                transition: all ease 2s; /* all: 백그라운드 속성을, ease: 속도를 2s: 2초동안 색이 변한다는 것, 소수점 단위도로 가능하다.*/
+            }
+
+            .bg-tr:hover{
+                background-color: rgb(240, 250, 151);
+            }
+
+            .border-tr{
+                background-color: rgb(248, 161, 190);
+            }
+            .border-tr:hover{
+                border: 3px solid paleturquoise;
+                border-radius: 50%;
+                transition: all linear 1.5s; /* liner: 시작부터 끝까지 같은 속도로 유지*/
+            }
+        </style>
+    </head>
+    <body> 
+        <div class="bg-tr"> </div>
+
+        <div class="border-tr"> </div>
+    </body>
+</html>

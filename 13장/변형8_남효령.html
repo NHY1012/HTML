@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Transform 7 - 남효령</title>
+        <style>
+            div{
+                width: 200px;
+                height: 200px;
+            }
+
+            .container{
+                border: 1px solid black;
+                display: inline-block; /* float: left; 해도 가로 정렬이 됨 */
+                margin-top: 100px;
+                margin-left: 100px;
+                perspective: 300px;
+            }
+
+            .box1{
+                background-color: darksalmon;
+                transform: rotateY(135deg);
+            }
+            #back1{
+                backface-visibility: hidden; /* 뒷면을 보이지 않겠다 */
+            }
+            
+            #back2{
+                backface-visibility: visible; /* 뒷면을 보이겠다 */
+            }
+        </style>
+    </head>
+    <body> 
+        <div class="container">
+            <div class="box1" id="back1"> 
+                <h1>BACK</h1>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="box1" id="back2">
+                <h1>BACK</h1>
+            </div>
+        </div>
+    </body>
+</html>

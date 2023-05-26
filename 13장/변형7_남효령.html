@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Transform 7 - 남효령</title>
+        <style>
+            div{
+                width: 200px;
+                height: 200px;
+            }
+
+            .container{
+                border: 1px solid black;
+                display: inline-block; /* float: left; 해도 가로 정렬이 됨 */
+                margin-top: 100px;
+                margin-left: 100px;
+                perspective: 300px;
+            }
+
+            .box1{
+                background-color: slateblue;
+                transform: rotateY(45deg); /* 최신 버전에서만 사용할 수 있도록, 하위 버전 사용하는 건 앞전에 있으니까 참고 하도록*/
+            }
+
+            .box2{
+                background-color:palegoldenrod;
+                transform: rotateX(45deg);
+                transform-origin: left top;
+            }
+
+            #tr-style1{
+                transform-style: flat;
+            }
+
+            #tr-style2{
+                transform-style: preserve-3d;
+            }
+        </style>
+    </head>
+    <body> 
+        <div class="container">
+            <div class="box1" id="tr-style1"> 
+                <div class="box2"> </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="box1" id="tr-style2"> 
+                <div class="box2"> </div>
+            </div>
+        </div>
+    </body>
+</html>

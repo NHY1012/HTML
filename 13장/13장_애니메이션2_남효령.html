@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> 애니메이션 2 - 남효령</title>
+
+        <style>
+            div{
+                width: 100px;
+                height: 100px;
+                float: left;
+                margin: 50px;
+            }
+
+            #Box1{
+                background-color: cadetblue;
+                animation-name: change-shape; /* 에니메이션 이름*/
+                animation-duration: 3s; /* 애니메이션 지속 시간*/
+            }
+
+            #Box2{
+                background-color: rgb(250, 191, 247);
+                animation-name: rotate; /* 에니메이션 이름*/
+                animation-duration: 5s; /* 애니메이션 지속 시간*/
+            }
+            
+            @keyframes change-shape{
+                form{
+                    background-color: cadetblue;
+                    border: 1px solid violet;
+                }
+
+                to{
+                    background-color: darkslateblue;
+                    border: 1px solid cornsilk;
+                    border-radius: 50%;
+
+                }
+            }
+
+            @keyframes rotate{
+                    form{
+                        transform: rotate(0deg);
+
+                    }
+
+                    to{
+                        transform: rotate(45deg);
+                    }
+                }
+        </style>
+    </head>
+    <body>
+        <div id="Box1"></div>
+        <div id="Box2"></div>
+    </body>
+</html>

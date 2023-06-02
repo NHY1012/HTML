@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> 애니메이션 1 - 남효령</title>
+
+        <style>
+            div{
+                width: 100px;
+                height: 100px;
+                background-color: cadetblue;
+                animation-name: change-shape; /* 에니메이션 이름*/
+                animation-duration: 3s; /* 애니메이션 지속 시간*/
+            }
+            
+            @keyframes change-shape{
+                form{
+                    background-color: cadetblue;
+                    border: 1px solid violet;
+                }
+
+                to{
+                    background-color: darkslateblue;
+                    border: 1px solid cornsilk;
+                    border-radius: 50%;
+
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>

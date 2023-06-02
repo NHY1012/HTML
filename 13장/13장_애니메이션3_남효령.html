@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> 애니메이션 3 - 남효령</title>
+
+        <style>
+
+            #box1{
+                height: 60px;
+                margin-left: 100px;
+                margin-top: 50px;
+                padding: 20px;
+                animation-name: moving; /* 에니메이션 이름*/
+                animation-duration: 3s; /* 애니메이션 지속 시간*/
+                animation-direction: normal;
+                animation-iteration-count: infinite; /* 인피니트 대신에 숫자를 지정하면 그 숫자 만큼 반복을 함, 이건 무한 반복*/
+            }
+
+            @keyframes moving{
+                from{
+                    width: 200px;
+                    background-color: cornflowerblue;
+                    transform: scale(0.5) rotate(15deg); /* 0.5로 시작 */
+                    opacity: 0.5;
+                }
+
+                to{
+                    width: 400px;
+                    background-color: rgb(39, 70, 131);
+                    transform: scale(1) rotate(0deg); /* 1로 끝 */
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box1"> 
+            <h3> CSS3 Animation </h3>
+        </div>
+    </body>
+</html>

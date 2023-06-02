@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> 애니메이션 4 - 남효령</title>
+
+        <style>
+            div{
+                width: 100px;
+                height: 100px;
+                margin-top: 50px;
+                margin-left: 100px;
+                background-color: cadetblue;
+                animation-name: change-shape; /* 에니메이션 이름*/
+                animation-duration: 2s; /* 애니메이션 지속 시간*/
+                animation-iteration-count: infinite;
+                animation-direction: normal;
+            }
+            
+            @keyframes change-shape{
+                form{
+                   transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+                }
+
+                50%{
+                    transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+                }
+
+                to{
+                    transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
